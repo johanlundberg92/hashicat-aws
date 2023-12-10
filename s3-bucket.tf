@@ -5,7 +5,6 @@ module "s3-bucket" {
 module "s3_bucket" {
   source = "terraform-aws-modules/s3-bucket/aws"
   bucket_prefix = "j-bucket-"
-  bucket = "my-s3-bucket"
   acl    = "private"
 
   versioning = {
